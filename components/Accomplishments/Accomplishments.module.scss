@@ -1,0 +1,138 @@
+.container {
+  padding-top: 8rem;
+  text-align: center;
+}
+
+.mockup {
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  font-size: 0;
+  perspective: 2400px;
+  perspective-origin: 50% 100%;
+  opacity: 0;
+  transition: 500ms opacity;
+}
+
+.mockup.loaded {
+  opacity: 1;
+}
+
+.mockup .part .top,
+.mockup .part .bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mockup .part.top {
+  transform: translate3d(0, 0, 0) rotateX(-90deg);
+}
+
+// .mockup:hover .part.top {
+//   transform: translate3d(0, 0, 0) rotateX(0deg);
+// }
+
+.mockup .part {
+  display: inline-block;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transform-origin: 50% 100%;
+  transition: 900ms;
+}
+
+.mockup.opened .part .top {
+  transform: translate3d(0, 0, -11px) rotateX(90deg) scale(1, 1);
+}
+
+.mockup .part .top {
+  transform-origin: 50% 0;
+  transform: translate3d(0, 0, -11px) rotateX(90deg);
+  transition: 900ms;
+}
+
+.mockup img {
+  display: block;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.mockup .part .cover {
+  position: relative;
+}
+
+.mockup video {
+  display: block;
+  position: absolute;
+  top: 8%;
+  left: 4%;
+  width: 92%;
+  border-radius: 6px;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 1px);
+}
+
+.mockup .part.bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate3d(0, 0, 0) rotateX(-90deg);
+}
+
+.mockup .part .bottom {
+  transform-origin: 50% 0;
+  transform: translate3d(0, 0, 0) rotateX(90deg);
+}
+.cardgv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  background-color: gray-dark;
+}
+
+.cardContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.cardText {
+  flex: 1;
+}
+
+.awardName {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  color:white;
+}
+
+.date {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.viewCertificateLink {
+  text-decoration: none;
+  color: #007bff;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.3s;
+}
+
+.viewCertificateLink:hover {
+  border-bottom-color: #007bff;
+}
+
+.cardImage img {
+  max-width: 100px; /* Adjust as needed */
+  height: auto;
+  border-radius: 4px;
+}
+
