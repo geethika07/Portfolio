@@ -3,7 +3,7 @@ export const METADATA = {
   title: "Geethika Vadlamudi",
   description:
     "Geethika Vadlamudi is a student pursuing Masters in Computer Science looking for internship opportunities for Summer 2024 in USA",
-  siteUrl: "https://www.shubhporwal.me/",
+  siteUrl: "https://geethikavadlamudi.netlify.app",
   twitterHandle: "@GeethikaVadlam2",
   keywords: [
     "Geethika Vadlamudi",
@@ -17,7 +17,7 @@ export const METADATA = {
     "Folio",
   ].join(", "),
   image:
-    "https://res.cloudinary.com/dywdhyojt/image/upload/v1690572126/preview.png",
+    "/preview.png",
   language: "English",
 };
 
