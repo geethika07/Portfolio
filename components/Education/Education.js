@@ -171,8 +171,6 @@ const Education = ({ clientWidth }) => {
                     </p>
                     <p className="mb-1 text-lg">{job.univ}</p>
                     <p className="italic text-sm font-thin">
-                      {/* {company?.startDate} -{" "}
-                        {company?.endDate ? company?.endDate : "Present"} */}
                       {job.range}
                     </p>
                     <ul className="text-base mt-6 list-disc ml-2 z-30">

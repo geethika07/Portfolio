@@ -177,7 +177,6 @@ const Work = ({ clientWidth }) => {
                           classes={`text-lg mb-4 ${
                             index === activeIndex && "primary__button__active"
                           }`}
-                          // href={'#${company.toLowerCase()}'}
                           type="primary"
                           onClick={() => {
                             setActiveIndex(index);
@@ -199,8 +198,6 @@ const Work = ({ clientWidth }) => {
                     </p>
                     <p className="mb-1 text-lg">{WORK[activeIndex]?.title}</p>
                     <p className="italic text-sm font-thin">
-                      {/* {company?.startDate} -{" "}
-                        {company?.endDate ? company?.endDate : "Present"} */}
                       {WORK[activeIndex]?.range}
                     </p>
                     <ul className="text-base mt-6 list-disc ml-2 z-30">

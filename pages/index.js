@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { gsap } from "gsap";
 import Meta from "@/components/Seo/Meta";
-import Loader from "@/components/Loader/Loader";
 import Header from "@/components/Header/Header";
 import Menu from "@/components/Header/Menu/Menu";
 import ProgressIndicator from "@/components/ProgressIndicator/ProgressIndicator";
@@ -14,7 +13,6 @@ import About2 from "@/components/About/About2";
 import Projects from "@/components/Projects/Projects";
 import Work from "@/components/Work/Work";
 import Education from "@/components/Education/Education";
-import Collaboration from "@/components/Collaboration/Collabaration";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 import Scripts from "@/components/Scripts/Scripts";
@@ -54,10 +52,6 @@ export default function Home() {
   return (
     <>
       <Meta>
-        {/* {isLoading ? (
-          <Loader />
-        ) : (
-          <> */}
             <Header>
               <Menu />
             </Header>
@@ -74,11 +68,9 @@ export default function Home() {
               <Hero />
               <About1 clientHeight={clientHeight} />
               <Skills />
-              {/* <About2 clientHeight={clientHeight} /> */}
               <Work clientWidth={clientWidth} />
               <Education clientWidth={clientWidth} />
               <Projects isDesktop={isDesktop} clientHeight={clientHeight} />
-              {/* <Collaboration clientHeight={clientHeight} /> */}
               <Accomplishments clientWidth={clientWidth} />
               <div className="pt-10 sm:pt-16 bg-gray-dark-4"></div>
               <Contact />

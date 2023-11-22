@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { useEffect, useRef, useState } from "react";
 import { Fade } from "react-reveal";
 import { gsap, Linear } from "gsap";
@@ -39,7 +38,6 @@ const Footer = () => {
       className="w-full relative select-none bg-cover"
       ref={targetSection}
     >
-      {/* <FooterBg /> */}
       <Fade bottom distance={"4rem"}>
         <div className="w-full h-full pt-32">
           <div className="section-container flex flex-col h-full justify-end z-10 items-center py-12">

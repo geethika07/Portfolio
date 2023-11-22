@@ -175,7 +175,7 @@ const Accomplishments = ({ clientWidth }) => {
                             <h3 className={styles.awardName}>{job.name}</h3>
                             <p className={styles.date}>{job.date}</p>
                             <a href={job.link} target="_blank" rel="noopener noreferrer" className={styles.viewCertificateLink}>
-                              View Certificate
+                              View Award
                             </a>
                           </div>
                           <div className={styles.cardImage}>
@@ -202,7 +202,7 @@ const Accomplishments = ({ clientWidth }) => {
                             <h3 className={styles.awardName}>{job.name}</h3>
                             <p className={styles.date}>{job.date}</p>
                             <a href={job.link} target="_blank" rel="noopener noreferrer" className={styles.viewCertificateLink}>
-                              View Certificate
+                              View Publication
                             </a>
                           </div>
                           <div className={styles.cardImage}>

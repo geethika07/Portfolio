@@ -5,7 +5,6 @@ import { MENULINKS, TYPED_STRINGS } from "../../constants";
 import styles from "./Hero.module.scss";
 import Button from "../Button/Button";
 import Profiles from "../Profiles/Profiles";
-// import lottie from "lottie-web";
 
 const Hero = () => {
   const [lottie, setLottie] = useState();
@@ -39,32 +38,22 @@ const Hero = () => {
   }, [typedEl, targetSection]);
 
   // useEffect(() => {
-  //   lottie.loadAnimation({
-  //     container: lottieRef.current,
-  //     renderer: "svg",
-  //     loop: true,
-  //     autoplay: true,
-  //     animationData: require("../../public/lottie/lottie.json"),
-  //   });
+  //   import("lottie-web").then((Lottie) => setLottie(Lottie.default));
   // }, []);
 
-  useEffect(() => {
-    import("lottie-web").then((Lottie) => setLottie(Lottie.default));
-  }, []);
+  // useEffect(() => {
+  //   if (lottie && lottieRef.current) {
+  //     const animation = lottie.loadAnimation({
+  //       container: lottieRef.current,
+  //       renderer: "svg",
+  //       loop: true,
+  //       autoplay: true,
+  //       animationData: require("../../public/lottie/lottie.json"),
+  //     });
 
-  useEffect(() => {
-    if (lottie && lottieRef.current) {
-      const animation = lottie.loadAnimation({
-        container: lottieRef.current,
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-        animationData: require("../../public/lottie/lottie.json"),
-      });
-
-      return () => animation.destroy();
-    }
-  }, [lottie]);
+  //     return () => animation.destroy();
+  //   }
+  // }, [lottie]);
 
   return (
     <section
@@ -104,13 +93,12 @@ const Hero = () => {
             Let&apos;s Talk
           </Button>
           <Button href="Resume.pdf" target="_blank" classes="link" type="primary">
-            Download Resume
+            Download CV
           </Button>
         </div>
       </div>
       <div
         className="absolute invisible w-4/12 bottom-1.5 lg:visible lg:right-12 2xl:right-16"
-        // ref={lottieRef}
       >
         <img className="absolute invisible w-10/12 bottom-1.5 lg:visible lg:right-0" src='/geethika.svg' style={{ borderRadius: '50%' }} />
       </div>
